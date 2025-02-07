@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptX</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Crimson Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets//styles/media.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar w-100">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    
+                    <!-- Logo (Left on Mobile, Center on Desktop) -->
+                    <div class="navbar-img order-1 order-md-2">
+                        <img src="./assets/img/icon.png" alt="img" loading="lazy">
+                    </div>
+        
+                    <!-- Desktop Navigation (Hidden on Mobile) -->
+                    <ul class="d-flex flex-grow-1 justify-content-start gap-5 d-none d-md-flex order-md-1">
+                        <li>HOME</li>
+                        <li>VOTE</li>
+                        <li>STORE</li>
+                    </ul>
+        
+                    <ul class="d-flex flex-grow-1 justify-content-end gap-5 d-none d-md-flex order-md-3">
+                        <li>GUIDES</li>
+                        <li>UPDATES</li>
+                        <li>DISCORD</li>
+                    </ul>
+        
+                    <!-- Hamburger Menu (Mobile) -->
+                    <div class="hamburger d-md-none order-3" id="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mobile Full-Screen Expanding Menu -->
+            <div class="mobile-menu d-md-none" id="mobileMenu">
+                <ul>
+                    <li>HOME</li>
+                    <li>VOTE</li>
+                    <li>STORE</li>
+                    <li>GUIDES</li>
+                    <li>UPDATES</li>
+                    <li>DISCORD</li>
+                </ul>
+            </div>
+        </nav>     
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="./assets/img/logo.png" alt="CryptX Logo" loading="lazy">
+                    </div>
+                    <div class="hero-buttons">
+                        <img src="" alt="Play Now">
+                        <img src="" alt="Join Discord">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
