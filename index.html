@@ -19,23 +19,23 @@
 </head>
 <body>
     <header>
-        <nav class="navbar w-100">
+        <nav class="navigation">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex justify-content-xl-around justify-content-between align-items-center">
                     
                     <!-- Logo (Left on Mobile, Center on Desktop) -->
                     <div class="navbar-img order-1 order-md-2">
-                        <img src="./assets/img/icon.png" alt="img" loading="lazy">
+                        <img src="./assets/img/icon_CryptX.svg" alt="img" loading="lazy">
                     </div>
         
                     <!-- Desktop Navigation (Hidden on Mobile) -->
-                    <ul class="d-flex flex-grow-1 justify-content-start gap-5 d-none d-md-flex order-md-1">
+                    <ul class="d-flex justify-content-start gap-5 d-none d-md-flex order-md-1 mx-lg-5">
                         <li>HOME</li>
                         <li>VOTE</li>
                         <li>STORE</li>
                     </ul>
         
-                    <ul class="d-flex flex-grow-1 justify-content-end gap-5 d-none d-md-flex order-md-3">
+                    <ul class="d-flex justify-content-end gap-5 d-none d-md-flex order-md-3">
                         <li>GUIDES</li>
                         <li>UPDATES</li>
                         <li>DISCORD</li>
@@ -49,6 +49,7 @@
                     </div>
                 </div>
             </div>
+            
         
             <!-- Mobile Full-Screen Expanding Menu -->
             <div class="mobile-menu d-md-none" id="mobileMenu">
@@ -65,15 +66,22 @@
     </header>
 
     <main>
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-logo">
+        <div class="hero d-flex justify-content-center align-items-center vh-100 ">
+            <div class="container ms-3 me-3">
+                <div class="hero-content d-flex flex-column align-items-center">
+                    <div class="hero-logo mt-md-5">
                         <img src="./assets/img/logo.png" alt="CryptX Logo" loading="lazy">
                     </div>
-                    <div class="hero-buttons">
-                        <img src="" alt="Play Now">
-                        <img src="" alt="Join Discord">
+                    <div class="hero-buttons d-flex gap-5 mt-5">
+                        <!-- Play Now Button -->
+                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            <img class="play-now" src="./assets/img/play-now.svg" alt="Play Now" loading="lazy">
+                        </a>
+
+                        <!-- Join Discord Button -->
+                         <a href="http://" target="_blank" rel="noopener noreferrer">
+                             <img class="join-discord" src="./assets/img/join-discord.png" alt="Join Discord" loading="lazy">
+                         </a>
                     </div>
                 </div>
             </div>
