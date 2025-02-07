@@ -20,39 +20,39 @@
 <body>
     <header>
         <nav class="navigation">
-            <div class="container">
-                <div class="d-flex justify-content-xl-around justify-content-between align-items-center">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center position-relative w-100">
                     
-                    <!-- Logo (Left on Mobile, Center on Desktop) -->
-                    <div class="navbar-img order-1 order-md-2">
-                        <img src="./assets/img/icon_CryptX.svg" alt="img" loading="lazy">
-                    </div>
-        
-                    <!-- Desktop Navigation (Hidden on Mobile) -->
-                    <ul class="d-flex justify-content-start gap-5 d-none d-md-flex order-md-1 mx-lg-5">
+                    <!-- Left Navigation (Hidden on Mobile) -->
+                    <ul class="d-flex justify-content-end gap-5 flex-grow-1 d-none d-md-flex left-nav">
                         <li>HOME</li>
                         <li>VOTE</li>
                         <li>STORE</li>
                     </ul>
-        
-                    <ul class="d-flex justify-content-end gap-5 d-none d-md-flex order-md-3">
+    
+                    <!-- Centered Nav Icon -->
+                    <div class="navbar-img">
+                        <img src="./assets/img/icon_CryptX.svg" alt="CryptX Icon" class="nav-icon">
+                    </div>
+    
+                    <!-- Right Navigation (Hidden on Mobile) -->
+                    <ul class="d-flex justify-content-start gap-5 flex-grow-1 d-none d-md-flex right-nav">
                         <li>GUIDES</li>
                         <li>UPDATES</li>
                         <li>DISCORD</li>
                     </ul>
-        
-                    <!-- Hamburger Menu (Mobile) -->
-                    <div class="hamburger d-md-none order-3" id="hamburger">
+    
+                    <!-- Mobile Menu Button (Visible on Mobile) -->
+                    <div class="hamburger d-md-none" id="hamburger">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
                 </div>
             </div>
-            
-        
+    
             <!-- Mobile Full-Screen Expanding Menu -->
-            <div class="mobile-menu d-md-none" id="mobileMenu">
+            <div class="mobile-menu d-none d-md-flex flex-column align-items-center justify-content-center" id="mobileMenu">
                 <ul>
                     <li>HOME</li>
                     <li>VOTE</li>
@@ -62,30 +62,63 @@
                     <li>DISCORD</li>
                 </ul>
             </div>
-        </nav>     
+        </nav>
     </header>
-
+    
     <main>
-        <div class="hero d-flex justify-content-center align-items-center vh-100 ">
-            <div class="container ms-3 me-3">
-                <div class="hero-content d-flex flex-column align-items-center">
-                    <div class="hero-logo mt-md-5">
-                        <img src="./assets/img/logo.png" alt="CryptX Logo" loading="lazy">
+        <section class="hero pt-5 pb-5">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Hero Logo (Aligned Below Nav Icon) -->
+                    <div class="hero-logo">
+                        <img src="./assets/img/logo.png" alt="CryptX Logo" loading="lazy" class="hero-img">
                     </div>
-                    <div class="hero-buttons d-flex gap-5 mt-5">
-                        <!-- Play Now Button -->
+                    
+                    <!-- Buttons -->
+                    <div class="hero-buttons d-flex justify-content-center">
                         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
                             <img class="play-now" src="./assets/img/play-now.svg" alt="Play Now" loading="lazy">
                         </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="join-discord" src="./assets/img/join-discord.png" alt="Join Discord" loading="lazy">
+                        </a>
+                    </div>
+                </div>
 
-                        <!-- Join Discord Button -->
-                         <a href="http://" target="_blank" rel="noopener noreferrer">
-                             <img class="join-discord" src="./assets/img/join-discord.png" alt="Join Discord" loading="lazy">
-                         </a>
+            </div>
+        </section>
+
+        <section class="homepage-news pt-5 pb-5">
+            <div class="container">
+                <div class="homepage-videos-wrapper d-flex justify-content-around custom-gap">
+                    <div class="homepage-item d-flex flex-column text-center rounded-top">
+                        <span class="p-2 rounded-top">LATEST VIDEO</span>
+                    </div>
+                    <div class="homepage-item d-flex flex-column text-center rounded-top">
+                        <span class="p-2 rounded-top">LATEST UPDATE</span>
+                        <div class="p-4 d-flex flex-column justify-content-between h-100">
+                            <ul class="mt-2 text-start flex-grow-1">
+                                <li>Text</li>
+                                <li>Text</li>
+                                <li>Text</li>
+                            </ul>
+                        
+                            <button class="custom-button text-end rounded align-self-end">
+                                <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
+                                    READ MORE
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="chat-and-players pt-5 pb-5">
+            <div class="container">
+                
+            </div>
+        </section>
     </main>
 
     <script src="./assets/js/script.js"></script>
