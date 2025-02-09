@@ -94,4 +94,13 @@
     .custom-gap {
         gap: 20px;
     }
+
+    .line-container::before,
+    .line-container::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    width: 0;
+}
 }

@@ -68,7 +68,7 @@
     <main>
         <section class="hero pt-5 pb-5">
             <div class="container-fluid">
-                <div class="hero-content">
+                <div class="hero-content fade-in-section">
                     <!-- Hero Logo (Aligned Below Nav Icon) -->
                     <div class="logo">
                         <img src="./assets/img/logo.png" alt="CryptX Logo" loading="lazy" class="ice-glow">
@@ -91,49 +91,61 @@
         <!-- ---------------------- Homepage Containers(Video and Updates) Section Start ---------------------- -->
         <section class="homepage-containers pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="row justify-content-center g-5 d-flex flex-lg-row flex-column"> 
+                <div class="row justify-content-center g-5 align-items-stretch"> 
                     <!-- First Container -->
-                    <div class="col-lg-5 col-md-6">
-                        <div class="container-item blue-color d-flex flex-column text-center rounded-top">
-                            <span class="p-2 rounded-top light-blue-color">LATEST VIDEO</span>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center h-100">
+                            <span class="p-2 rounded-top w-100 light-blue-color">LATEST VIDEO</span>
+        
+                            <!-- Video Player -->
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                                <iframe 
+                                    width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
                     </div>
         
                     <!-- Second Container -->
-                    <div class="col-lg-5 col-md-6">
-                        <div class="container-item blue-color d-flex flex-column text-center rounded-top">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center h-100 position-relative">
+
                             <span class="p-2 rounded-top light-blue-color">LATEST UPDATE</span>
-        
-                            <div class="p-3 d-flex flex-column justify-content-between h-100">
-                                <ul class="mt-2 text-start flex-grow-1">
-                                    <li>Text</li>
-                                    <li>Text</li>
-                                    <li>Text</li>
-                                </ul>
-        
-                                <button class="custom-button text-end rounded align-self-end">
+
+                            <div class="flex-grow-1 d-flex justify-content-center align-items-center text-wrap px-3">
+                                <p class="m-0 text-break text-center">No Data Available</p> <!-- Centered Content -->
+                            </div>
+                    
+                            <!-- Button  -->
+                            <div class="d-flex justify-content-end mt-auto align-items-end">
+                                <button class="custom-button text-end rounded m-3">
                                     <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
                                         READ MORE
                                     </a>
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </section>
-        
         <!-- ---------------------- Homepage Containers(Video and Updates) Section END ---------------------- -->
 
         <!-- ---------------------- Chat and Players Content Section Start ---------------------- -->
         <section class="custom-background-section pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="row justify-content-center g-5">
+                <div class="row justify-content-center g-5 align-items-stretch"> 
                     <!-- First Container -->
                     <div class="col-lg-6 col-md-6">
-                        <div class="container-item blue-color d-flex flex-column text-center">
+                        <div class="container-item blue-color d-flex flex-column text-center h-100">
                             <span class="p-2 rounded-top w-100 light-blue-color">LIVE GAME GLOBAL CHAT</span>
-                            <ul class="text-start p-2 d-flex flex-column gap-1">
+                            <ul class="text-start p-2 d-flex flex-column gap-1 flex-grow-1">
                                 <li class="dark-blue rounded">Text Message</li>
                                 <li class="dark-blue rounded">Text Message</li>
                                 <li class="dark-blue rounded">Text Message</li>
@@ -147,22 +159,28 @@
         
                     <!-- Second Container -->
                     <div class="col-lg-6 col-md-6">
-                        <div class="container-item blue-color d-flex flex-column text-center">
+                        <div class="container-item blue-color d-flex flex-column text-center h-100">
                             <span class="p-2 rounded-top light-blue-color">TOP PLAYERS</span>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                                <p class="m-2"> <!-- Placeholder for future content -->
+
+                                </p> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
         <!-- ---------------------- Chat and Players Content Section END ---------------------- -->
 
         <!-- ---------------------- Featured Content section start ---------------------- -->
-         <section class="homepage-containers shadow pt-lg-5 pb-lg-5 padding-section">
+         <section class="homepage-containers pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
                 <div class="title d-flex flex-column justify-content-center text-center align-items-center">
                     <h2>FEATURED CONTENT</h2>
-                    <img class="ice-glow" width="190" height="32" src="./assets/img/crystal.png" alt="crystal">
+                    <div class="line-container">
+                        <img class="ice-glow line" width="190" height="32" src="./assets/img/crystal.png" alt="crystal">
+                    </div>
                 </div>
 
                 <div class="homepage-containers-wrapper pt-5">
@@ -193,22 +211,13 @@
          <!-- ---------------------- Join Discord, Live Game Feed Section start ---------------------- -->
          <section class="custom-background-section pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="row justify-content-center g-5">
-                
+                <div class="row justify-content-center g-5 align-items-stretch"> 
                     <!-- First Container -->
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div class="container-item custom-colors d-flex flex-column text-center rounded">
+                        <div class="container-item custom-colors d-flex flex-column text-center rounded h-100">
                             <span class="p-2 rounded-top w-100">JOIN DISCORD</span>
         
-                            <!-- Pushes Button to Bottom -->
                             <div class="content-wrapper d-flex flex-column flex-grow-1 justify-content-between">
-                                <div class="p-3">
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Provident odit porro perferendis 
-                                    recusandae vitae, temporibus doloremque magnam, delectus 
-                                    quod distinctio laboriosam laborum sit consectetur ipsum 
-                                    ducimus nobis vel, beatae quae!
-                                </div>
                                 <button class="custom-button purple-color mx-5 mt-auto mb-4">
                                     <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
                                         Text
@@ -220,9 +229,9 @@
         
                     <!-- Second Container -->
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div class="container-item blue-color d-flex flex-column text-center">
+                        <div class="container-item blue-color d-flex flex-column text-center h-100">
                             <span class="p-2 rounded-top light-blue-color">LIVE GAME FEED</span>
-                            <ul class="text-start p-2 d-flex flex-column gap-1">
+                            <ul class="text-start p-2 d-flex flex-column gap-1 flex-grow-1">
                                 <li class="dark-blue rounded">Text Message</li>
                                 <li class="dark-blue rounded">Text Message</li>
                                 <li class="dark-blue rounded">Text Message</li>
@@ -233,17 +242,17 @@
                             </ul>
                         </div>
                     </div>
-        
                 </div>
             </div>
         </section>
+        
         
          <!-- ---------------------- Join Discord, Live Game Feed Section end ---------------------- -->
 
         <!-- ---------------------- Download and Play Section Start ---------------------- -->
         <section class="custom-background-section land-background pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="title d-flex flex-column justify-content-center text-center align-items-center gap-3">
+                <div class="title d-flex flex-column justify-content-center text-center align-items-center gap-3 fade-in-section">
                     <h1>DOWNLOAD & PLAY!</h1>
                     <a href="http://google.com" target="_blank" rel="noopener noreferrer">
                         <img class="play-now" src="./assets/img/play-now.svg" alt="Play Now" loading="lazy">

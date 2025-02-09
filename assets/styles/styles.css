@@ -457,3 +457,32 @@ footer .logo {
     color: #fff;
     opacity: 0.8;
 }
+
+/* Fade in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-in-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Design Element Line Styles */
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.line-container::before,
+.line-container::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    width: 165px;
+}
