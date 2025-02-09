@@ -422,21 +422,14 @@ span.light-blue-color {
     background-color: var(--purple);
 }
 
-.container-item.custom-size {
-    width: 100%;
-    max-width: 560px;
-    height: 379px;
-}
-
-.container-item.custom-size-large {
-    width: 100%; 
-    max-width: 881px; 
-    height: 379px;
-}
-
 /* Footer Styles Start --------------------------------------- */
 footer .logo {
     width: 100%;
     max-width: 428px;
     height: auto;
+}
+
+.footer-list li {
+    font-family: "Inter", serif;
+    font-size: 18px;
 }
