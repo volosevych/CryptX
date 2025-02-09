@@ -86,25 +86,41 @@ a, button {
 
 .desktop-links ul li {
     position: relative;
-    color: #fff;
+    display: inline-block;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
+    color: #fff;
+    padding: 5px 0;
+    overflow: hidden;
 }
 
-.desktop-links ul li::before {
+.desktop-links ul li:hover {
+    color: var(--border-color);
+}
+
+.desktop-links ul li::before,
+.desktop-links ul li::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
-    bottom: -3px;
+    height: 2px;
+    background: var(--border-color);
     left: 0;
-    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
     transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
-.desktop-links ul li:hover::before {
+.desktop-links ul li::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.desktop-links ul li::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.desktop-links ul li:hover::before,
+.desktop-links ul li:hover::after {
     transform: scaleX(1);
 }
 
@@ -432,4 +448,12 @@ footer .logo {
 .footer-list li {
     font-family: "Inter", serif;
     font-size: 18px;
+
+    position: relative;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-list li:hover {
+    color: #fff;
+    opacity: 0.8;
 }
