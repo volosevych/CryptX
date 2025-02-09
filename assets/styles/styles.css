@@ -242,6 +242,7 @@ a, button {
 /* Home Hero Section ----------------------------------------------------------- */
 .hero {
     width: 100%; 
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,7 +334,7 @@ a, button {
 .custom-background-section{
     width: 100vw;
     background: url('../img/scores-background.jpg') no-repeat center center;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
@@ -343,12 +344,14 @@ a, button {
 
 .custom-background-section.land-background {
     background: url('../img/background/background-3.png') no-repeat center center;
+    background-size: cover;
     border-top: 5px solid var(--border-color);
     border-bottom: 5px solid var(--border-fill);
 }
 
 .custom-background-section.dark-background {
     background: url('../img/background/footer-background.png') no-repeat center center;
+    background-size: cover;
 }
 
 .custom-background-section.land-background::before {
