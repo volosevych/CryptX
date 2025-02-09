@@ -324,6 +324,7 @@ a, button {
 
 .custom-button a{
     font-size: 22px;
+    font-family: "Inter", serif;
 }
 
 .custom-button:hover {
@@ -373,7 +374,7 @@ a, button {
 }
 
 .dark-blue {
-    background-color: var(--background-color);
+    background: linear-gradient(to bottom, #000920 0%, #000A45 100%);
     padding: 5px 10px;
     font-size: 20px;
 }
@@ -399,7 +400,7 @@ a, button {
 }
 
 span.light-blue-color {
-    background-color: var(--border-color);
+    background: linear-gradient(to bottom, #2EABFF 0%, #0058BE 100%);
 }
 
 .homepage-box:hover img {
@@ -424,13 +425,13 @@ span.light-blue-color {
 .container-item.custom-size {
     width: 100%;
     max-width: 560px;
-    height: auto;
+    height: 379px;
 }
 
 .container-item.custom-size-large {
     width: 100%; 
     max-width: 881px; 
-    height: auto;
+    height: 379px;
 }
 
 /* Footer Styles Start --------------------------------------- */

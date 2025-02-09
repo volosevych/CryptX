@@ -9,15 +9,28 @@
         left: 46.5%;
     }
 } */
+@media (max-width: 1280px) {
+    .custom-background-section {
+        background-size: auto;
+    }
+}
 
 @media (max-width: 1024px) {
+    /* .container-item.custom-size {
+        height: auto;
+    }
+
+    .container-item.custom-size-large {
+        height: auto;
+    } */
+
+    .hero {
+        height: auto;
+    }
+    
     .padding-section {
         padding-top: 3rem;
         padding-bottom: 3rem;
-    }
-
-    .hero {
-        left: 0;
     }
 
     .navigation {
@@ -27,11 +40,6 @@
     /* Show Mobile Menu */
     .hamburger {
         display: flex !important;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
     }
 
     .homepage-videos-wrapper {

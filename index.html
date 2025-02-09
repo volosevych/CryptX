@@ -8,10 +8,10 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
 
-    <!-- Crimson Font -->
+    <!-- Crimson Font, Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
@@ -91,69 +91,70 @@
         <!-- ---------------------- Homepage Containers(Video and Updates) Section Start ---------------------- -->
         <section class="homepage-containers pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="container-item-wrapper d-flex justify-content-around align-items-center gap-5">
+                <div class="row justify-content-center g-5 d-flex flex-lg-row flex-column"> 
                     <!-- First Container -->
-                    <div class="container-item custom-size blue-color d-flex flex-column text-center rounded-top">
-                        <span class="p-2 rounded-top light-blue-color">LATEST VIDEO</span>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center rounded-top">
+                            <span class="p-2 rounded-top light-blue-color">LATEST VIDEO</span>
+                        </div>
                     </div>
-
+        
                     <!-- Second Container -->
-                    <div class="container-item custom-size blue-color d-flex flex-column text-center rounded-top">
-                        <span class="p-2 rounded-top light-blue-color">LATEST UPDATE</span>
-
-                        <div class="p-2 d-flex flex-column justify-content-between h-100">
-                            <ul class="mt-2 text-start flex-grow-1">
-                                <li>Text</li>
-                                <li>Text</li>
-                                <li>Text</li>
-                            </ul>
-                        
-                            <button class="custom-button text-end rounded align-self-end">
-                                <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
-                                    READ MORE
-                                </a>
-                            </button>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center rounded-top">
+                            <span class="p-2 rounded-top light-blue-color">LATEST UPDATE</span>
+        
+                            <div class="p-3 d-flex flex-column justify-content-between h-100">
+                                <ul class="mt-2 text-start flex-grow-1">
+                                    <li>Text</li>
+                                    <li>Text</li>
+                                    <li>Text</li>
+                                </ul>
+        
+                                <button class="custom-button text-end rounded align-self-end">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
+                                        READ MORE
+                                    </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- ---------------------- Homepage Containers(Video and Updates) Section END ---------------------- -->
 
         <!-- ---------------------- Chat and Players Content Section Start ---------------------- -->
         <section class="custom-background-section pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="container-item-wrapper d-flex justify-content-around align-items-center custom-gap">
-
+                <div class="row justify-content-center g-5">
                     <!-- First Container -->
-                    <div class="container-item custom-size-large blue-color d-flex flex-column text-center">
-                        <span class="p-2 rounded-top w-100 light-blue-color">LIVE GAME GLOBAL CHAT</span>
-                        <ul class="text-start p-2 gap-2 d-flex flex-column">
-                            <li class="dark-blue rounded">Text Message</li>
-                            <li class="dark-blue rounded">Text Message</li>
-                            <li class="dark-blue rounded">Text Message</li>
-                            <li class="dark-blue rounded">Text Message</li>
-                            <li class="dark-blue rounded">Text Message</li>
-                            <li class="dark-blue rounded">Text Message</li>
-                        </ul>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center">
+                            <span class="p-2 rounded-top w-100 light-blue-color">LIVE GAME GLOBAL CHAT</span>
+                            <ul class="text-start p-2 d-flex flex-column gap-1">
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                            </ul>
+                        </div>
                     </div>
-
+        
                     <!-- Second Container -->
-                    <div class="container-item custom-size blue-color d-flex flex-column text-center">
-                        <span class="p-2 rounded-top light-blue-color">TOP PLAYERS</span>
-
-                        <ul class="text-start p-2 gap-2 d-flex flex-column">
-                            <li class=" rounded">Text Message</li>
-                            <li class=" rounded">Text Message</li>
-                            <li class=" rounded">Text Message</li>
-                            <li class=" rounded">Text Message</li>
-                            <li class=" rounded">Text Message</li>
-                            <li class=" rounded">Text Message</li>
-                        </ul>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="container-item blue-color d-flex flex-column text-center">
+                            <span class="p-2 rounded-top light-blue-color">TOP PLAYERS</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- ---------------------- Chat and Players Content Section END ---------------------- -->
 
         <!-- ---------------------- Featured Content section start ---------------------- -->
@@ -192,30 +193,51 @@
          <!-- ---------------------- Join Discord, Live Game Feed Section start ---------------------- -->
          <section class="custom-background-section pt-lg-5 pb-lg-5 padding-section">
             <div class="container">
-                <div class="container-item-wrapper d-flex justify-content-around align-items-center custom-gap">
-        
+                <div class="row justify-content-center g-5">
+                
                     <!-- First Container -->
-                    <div class="container-item custom-colors custom-size d-flex flex-column text-center rounded">
-                        <span class="p-2 rounded-top w-100">JOIN DISCORD</span>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="container-item custom-colors d-flex flex-column text-center rounded">
+                            <span class="p-2 rounded-top w-100">JOIN DISCORD</span>
         
-                        <!-- Pushes Button to Bottom -->
-                        <div class="content-wrapper d-flex flex-column flex-grow-1 justify-content-between">
-                            <button class="custom-button purple-color mx-5 mt-auto mb-4">
-                                <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
-                                    Text
-                                </a>
-                            </button>
+                            <!-- Pushes Button to Bottom -->
+                            <div class="content-wrapper d-flex flex-column flex-grow-1 justify-content-between">
+                                <div class="p-3">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Provident odit porro perferendis 
+                                    recusandae vitae, temporibus doloremque magnam, delectus 
+                                    quod distinctio laboriosam laborum sit consectetur ipsum 
+                                    ducimus nobis vel, beatae quae!
+                                </div>
+                                <button class="custom-button purple-color mx-5 mt-auto mb-4">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="text-white">
+                                        Text
+                                    </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
         
                     <!-- Second Container -->
-                    <div class="container-item custom-size blue-color d-flex flex-column text-center">
-                        <span class="p-2 rounded-top light-blue-color">TOP PLAYERS</span>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="container-item blue-color d-flex flex-column text-center">
+                            <span class="p-2 rounded-top light-blue-color">LIVE GAME FEED</span>
+                            <ul class="text-start p-2 d-flex flex-column gap-1">
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                                <li class="dark-blue rounded">Text Message</li>
+                            </ul>
+                        </div>
                     </div>
         
                 </div>
             </div>
         </section>
+        
          <!-- ---------------------- Join Discord, Live Game Feed Section end ---------------------- -->
 
         <!-- ---------------------- Download and Play Section Start ---------------------- -->
