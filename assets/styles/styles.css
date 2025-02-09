@@ -2,6 +2,11 @@
     --background-color: #000e37;
     --border-fill: #00388C;
     --border-color: #0273C5;
+    --purple: #8544FF;
+    --darkerPurple: #7142FF;
+    --dark: #1E1E1E;
+
+    --largeFontSize: clamp(42px, 5vw, 62px);
 }
 
 body::-webkit-scrollbar {
@@ -33,9 +38,14 @@ body {
     font-style: normal;
     color: #fff;
     font-size: 24px;
+    background-color: var(--background-color) !important;
 
     scrollbar-width: thin; 
     scrollbar-color: rgba(255, 255, 255, 0.3) transparent; 
+}
+
+h1 {
+    font-size: var(--largeFontSize);
 }
 
 .custom-gap {
@@ -53,6 +63,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a, button {
@@ -71,6 +82,30 @@ a, button {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.desktop-links ul li {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.desktop-links ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.desktop-links ul li:hover::before {
+    transform: scaleX(1);
 }
 
 .left-nav,
@@ -206,7 +241,7 @@ a, button {
 
 /* Home Hero Section ----------------------------------------------------------- */
 .hero {
-    width: 100vw; 
+    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,10 +255,14 @@ a, button {
     background-color: var(--background-color);
 }
 
-.hero-logo img{
+.logo .ice-glow{
     width: 100%;
     max-width: 856px;
     height: auto;
+    animation: ice-glow 2s infinite alternate ease-in-out;
+}
+
+.ice-glow {
     animation: ice-glow 2s infinite alternate ease-in-out;
 }
 
@@ -263,27 +302,8 @@ a, button {
 }
 
 /* Homepage Videos Section Styles ----------------------------------- */
-.homepage-news {
+.homepage-containers {
     background-color: var(--background-color);
-}
-
-.homepage-item {
-    border: 1px solid transparent;
-    background-color: var(--border-fill);
-    width: 100%; 
-    max-width: 720px; 
-    height: 433px; 
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.homepage-item:nth-child(2) {
-    max-width: 640px; /* Latest Update box width */
-}
-
-.homepage-item span {
-    border: 1px solid transparent;
-    background-color: var(--border-color);
 }
 
 .custom-button {
@@ -291,6 +311,14 @@ a, button {
     background-color: var(--border-color);
     transition: background-color .3s ease-in-out;
     padding: 11px 18px;
+}
+
+.custom-button.purple-color {
+    background-color: var(--purple);
+}
+
+.custom-button.purple-color:hover {
+    background-color: var(--darkerPurple);
 }
 
 .custom-button a{
@@ -302,12 +330,109 @@ a, button {
 }
 
 /* Chat and Players Section Styles --------------------------------------------- */
-.chat-and-players {
+.custom-background-section{
     width: 100vw;
     background: url('../img/scores-background.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center; 
+}
+
+.custom-background-section.land-background {
+    background: url('../img/background/background-3.png') no-repeat center center;
+    border-top: 5px solid var(--border-color);
+    border-bottom: 5px solid var(--border-fill);
+}
+
+.custom-background-section.dark-background {
+    background: url('../img/background/footer-background.png') no-repeat center center;
+}
+
+.custom-background-section.land-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background-color: var(--border-fill);
+}
+
+.custom-background-section.land-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 6px;
+    background-color: var(--border-color);
+}
+
+.dark-blue {
     background-color: var(--background-color);
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+/* Featured Content Styles Start --------------------------------------------------- */
+.homepage-box {
+    border: 1px solid var(--border-color);
+    background-color: var(--border-fill);
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homepage-box img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.homepage-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+span.light-blue-color {
+    background-color: var(--border-color);
+}
+
+.homepage-box:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+.container-item.blue-color {
+    border: 1px solid transparent;
+    background-color: var(--border-fill);
+}
+
+.container-item.custom-colors {
+    border: 1px solid var(--purple);
+    background-color: var(--dark);
+}
+
+.container-item.custom-colors span {
+    background-color: var(--purple);
+}
+
+.container-item.custom-size {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+}
+
+.container-item.custom-size-large {
+    width: 100%; 
+    max-width: 881px; 
+    height: auto;
+}
+
+/* Footer Styles Start --------------------------------------- */
+footer .logo {
+    width: 100%;
+    max-width: 428px;
+    height: auto;
 }
