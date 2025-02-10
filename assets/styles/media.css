@@ -106,5 +106,10 @@
     height: 1px;
     background-color: #fff;
     width: 0;
-}
+    }
+
+    .vote-row.row>* {
+        padding-left: 0;
+        padding-right: 0;;
+    }
 }
