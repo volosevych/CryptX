@@ -88,6 +88,10 @@
     .custom-background-section.dark-background {
         background: none;
     }
+
+    .vote {
+        margin: 100px 0;
+    }
 }
 
 @media (max-width: 540px) {

@@ -22,3 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+
+
+document.querySelector("#submit-button").addEventListener("click", function (e) {
+    e.preventDefault(); 
+    let button = this;
+    let btnText = document.querySelector("#btnText");
+
+    btnText.innerHTML = "Thanks"; 
+    button.classList.add("active"); 
+});
