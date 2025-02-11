@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Hamburger Mobile Menu Toggle
+    // ✅ Hamburger Mobile Menu Toggle
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Fade-in Section Observer
+    // ✅ Fade-in Section Observer
     const sections = document.querySelectorAll(".fade-in-section");
     if (sections.length > 0) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("show");
-                    observer.unobserve(entry.target); 
+                    observer.unobserve(entry.target); // Stop observing once element is visible
                 }
             });
         }, { threshold: 0.2 });
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sections.forEach(section => observer.observe(section));
     }
 
-    // Submit Button Interaction
+    // ✅ Submit Button Interaction
     document.body.addEventListener("click", function (e) {
         if (e.target.closest("#submit-button")) {
             e.preventDefault();
@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
